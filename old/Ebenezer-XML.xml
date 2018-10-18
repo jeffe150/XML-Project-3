@@ -1,0 +1,111 @@
+<?xml version= "1.0" encoding= "utf-8"?>
+
+<?xml-stylesheet type="text/css" href="Ebenezer_style.css"?>
+
+<!--URL= -->
+
+<!DOCTYPE Ebenezer [
+<!ELEMENT Ebenezer (content)>
+<!ELEMENT content (body, title, heading, subtitle, section, bullet, paragraph, name, phone, email, location, address, donationtitle)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT section (#PCDATA)>
+<!ELEMENT bullet (#PCDATA)>
+<!ELEMENT paragraph (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT donationtitle (#PCDATA)>
+<!ELEMENT button (#PCDATA)>
+<!ENTITY garden_box SYSTEM "ebenezergardenbox.jpg" NDATA gif>
+<!ENTITY man_in_wheelchair SYSTEM "Toronto.png" NDATA gif>
+<!ENTITY woman_in_wheelchair SYSTEM "4_1_orig.jpg" NDATA gif>
+<!ENTITY two_seniors_smile SYSTEM "towerapts.jpg" NDATA gif>
+
+
+]>
+
+<!-- include later: user tags for each audience
+<user=participants>
+<user=support>
+<user=donors-other>
+-->
+
+<body>
+
+  <title>Ebenezer Horticultural Therapy:</title>
+    <subtitle>Plants, gardening and the outdoor environment</subtitle>
+
+    <empty_element/>
+
+      <section>
+      <Graphic entity = "garden_box" />
+      <heading>Activities:</heading>
+      <bullet> Creating seasonal fresh-cut floral arrangements</bullet>
+      <bullet> Learning about and planting seeds for plants to be used in our therapeutic gardens</bullet>
+      <bullet> Planting and tending the fully handicapped-accessible gardens on campus</bullet>
+      <bullet> Cooking with produce and herbs from our gardens</bullet>
+      <bullet> Reading about nature and the great outdoors-related topics</bullet>
+      <bullet> Learning how to attract birds and butterflies to our gardens</bullet>
+      <bullet> Going on garden and nature-related outings to sites in the metro area and beyond</bullet>
+      </section>
+
+    <empty_element/>
+
+      <section>
+      <Graphic entity = "man_in_ wheelchair" />
+      <heading> Life Long Learning:</heading>
+      <subtitle>Learning and growing helps everyone at every stage of life, and for seniors, the benefits are endless.</subtitle>
+
+      <paragraph>Ebenezer's Life Long Learning Initiative is a collection of coordinated arts and education programs designed to
+      foster growth and creativity for seniors. Life-long learning is the process of keeping your mind, body and spirit engaged -at any age -
+      by actively pursuing knowledge and experience. </paragraph>
+
+      <paragraph>Research has shown that with opportunities for self expression and discovery, seniors experience vibrant living, artistic
+      growth as well as improved mental and physical health. Life Long Learning helps our residents stay connected to their world.</paragraph>
+      </section>
+
+    <empty_element/>
+
+      <section>
+      <heading>Recent Events</heading>
+      <Graphic entity = "woman_in_wheelchair"/>
+      <paragraph>Last month our program participants took an outing to the Minnesota Landscape Arboretum! It was a beautiful day to take a look at
+      the huge variety of plants this garden has to offer. Each senior got to enjoy some fresh air and beautiful scenery. Special thanks to our
+      volunteers who assisted any residents with chairs and other mobility issues. </paragraph>
+      <Graphic entity = "two_seniors_smile"/>
+      <paragraph>The first week of August, we held a class on trans-potting houseplants. Every participant got to get their hands dirty and take home
+       a freshly-potted low-maintenance plant for their apartment. </paragraph>
+       </section>
+
+    <empty_element/>
+
+       <section>
+       <heading>Contact</heading>
+       <name>Paula Vollmar-Heywood</name>
+       <phone>612-871-4594,</phone>
+       <email>pvollma1@fairview.org</email>
+       <location>Ebenezer Tower Apartments</location>
+       <address>2523 Portland Ave. S. Minneapolis, MN 55404</address>
+       </section>
+
+    <empty_element/>
+
+       <section>
+       <donationtitle>Ebenezer's Horticultural Therapy Program is supported solely by donations.</donationtitle>
+       <paragraph>Our program has been recognized for its achievements by Aging Services of Minnesota, Minnesota's largest statewide trade association for
+       providers of older adult services. In 2015, the Horticultural Therapy Program and the Spiritual Care and Healing Garden received the "Innovation of
+       the Year" award. This award is given to providers that have demonstrated creativity in programs and/or services to their customers. </paragraph>
+
+       <paragraph>We are honored to provide enriching experiences for our seniors and are driven to heal, discover and educate for longer, healthier lives.
+        Please consider donating to this program at the link below. </paragraph>
+
+        <button>Make A Gift</button>
+        </section>
+
+
+</body>

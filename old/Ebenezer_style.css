@@ -1,0 +1,27 @@
+body {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+title {
+  color:#97272E;
+
+}
+
+subtitle {
+  color:#796E6E;
+  font-family: "Optima", sans-serif;
+  font-weight: 500
+}
+
+donationtitle {
+color:#A49B9B;
+font-family: "optima" sans-serif;
+font-variant: small-caps;
+}
+
+paragraph {
+  font-family: "lucida console", osaka, sans-serif;
+}
