@@ -1,5 +1,42 @@
 <?xml version=“1.0” encoding=“UTF-8”>
 
-<?xml-stylesheet type="text/css" href="Ebenezer_style.css"?>
+<?xml-stylesheet type="text/css" href="donation_style.css"?>
 
-<!--URL=  -->
+<!--URL= https://jeffe150.github.io/XML-Project-3/Donation_Form.xml-->
+
+<!DOCTYPE Donation_Form [
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT recur (#PCDATA)>
+<!ATTLIST recur type (Yes | No) #REQUIRED>
+<!ELEMENT donate (amount, designation, other)>
+<!ELEMENT amount (#PCDATA)>
+<!ATTLIST amount type ($500.00 | $250.00 | $100.00 | other) #REQUIRED>
+<!ELEMENT designation (#PCDATA)>
+<!ATTLIST designation type (Ebenezer Greatest Need Fund | Ebenezer Life Long Learning | Other )
+<!ELEMENT other (#PCDATA)>
+<!ELEMENT card (card_name, card_number, CVV, exp_month, exp_year)>
+<!ELEMENT card_name (#PCDATA)>
+<!ELEMENT card_number (#PCDATA)>
+<!ELEMENT CVV (#PCDATA)>
+<!ELEMENT exp_month (#PCDATA)>
+<!ELEMENT exp_year (#PCDATA)>
+<!ELEMENT billing (name, address)>
+<!ATTLIST name type (first, last)>
+<!ELEMENT address (street, unit, city, state, zip, phone)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT unit (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT zip (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone type (cell, home)>
+<!ELEMENT details (dedication, notify, informed)>
+<!ELEMENT dedication (#PCDATA)>
+<!ATTLIST dedication type (None | In Honor Of | In Memory Of)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT notify (#PCDATA)>
+<!ELEMENT informed (#PCDATA)>
+<!ATTLIST informed type (Yes | No) #REQUIRED>
+
+]>
