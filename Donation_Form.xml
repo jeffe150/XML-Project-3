@@ -33,7 +33,7 @@
 <!ELEMENT state (#PCDATA)>
 <!ELEMENT zip (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
-<!ATTLIST phone type (cell, home) #REQUIRED>
+<!ATTLIST phone type (cell | home) #REQUIRED>
 <!ELEMENT details (dedication, heading, notify, informed)>
 <!ELEMENT dedication (#PCDATA)>
 <!ATTLIST dedication type (None | InHonorOf | InMemoryOf)>
