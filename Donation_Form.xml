@@ -23,7 +23,9 @@
 <!ELEMENT exp_year (#PCDATA)>
 <!ELEMENT billing (email, name, address)>
 <!ELEMENT email (#PCDATA)>
-<!ATTLIST name type (first, last)>
+<!ATTLIST name (first, last)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
 <!ELEMENT address (street, unit, city, state, zip, phone) >
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT unit (#PCDATA)>
@@ -67,8 +69,10 @@
 
     <billing>
       <email> janedoe@gmail.com </email>
-      <name type="first"> Jane </name>
-      <name type="last"> Doe </name>
+      <name>
+        <first> Jane </first>
+        <last> Doe </last>
+      </name>
       <address>
         <street> 123 Imaginary Street </street>
         <unit> Apt. 101</unit>
