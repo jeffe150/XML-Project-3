@@ -13,7 +13,7 @@
 <!ELEMENT amount (#PCDATA)>
 <!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other )>
+<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other ) >
 <!ELEMENT Other (#PCDATA)>
 <!ELEMENT card (heading, card_name, card_number, CVV, exp_month, exp_year) >
 <!ELEMENT card_name (#PCDATA)>
@@ -23,7 +23,7 @@
 <!ELEMENT exp_year (#PCDATA)>
 <!ELEMENT billing (email, name, address)>
 <!ELEMENT email (#PCDATA)>
-<!ATTLIST name type (first, last)>
+<!ATTLIST name type (firs, last)>
 <!ELEMENT address (street, unit, city, state, zip, phone) >
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT unit (#PCDATA)>
