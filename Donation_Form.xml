@@ -36,7 +36,7 @@
 <!ATTLIST phone type (cell | home) #REQUIRED>
 <!ELEMENT details (dedication, heading, notify, informed)>
 <!ELEMENT dedication (#PCDATA)>
-<!ATTLIST dedication type (None | InHonorOf | InMemoryOf)>
+<!ATTLIST dedication type (None | InHonorOf | InMemoryOf) #REQUIRED>
 <!ELEMENT heading (#PCDATA)>
 <!ELEMENT notify (#PCDATA)>
 <!ELEMENT informed (#PCDATA)>
