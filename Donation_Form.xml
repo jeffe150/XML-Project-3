@@ -13,7 +13,7 @@
 <!ELEMENT amount (#PCDATA)>
 <!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (Greatest Need Fund | Life Long Learning | Other )>
+<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other )>
 <!ELEMENT Other (#PCDATA)>
 <!ELEMENT card (heading, card_name, card_number, CVV, exp_month, exp_year) >
 <!ELEMENT card_name (#PCDATA)>
@@ -34,7 +34,7 @@
 <!ATTLIST phone type (cell, home)>
 <!ELEMENT details (dedication, heading, notify, informed)>
 <!ELEMENT dedication (#PCDATA)>
-<!ATTLIST dedication type (None | In Honor Of | In Memory Of)>
+<!ATTLIST dedication type (None | InHonorOf | InMemoryOf)>
 <!ELEMENT heading (#PCDATA)>
 <!ELEMENT notify (#PCDATA)>
 <!ELEMENT informed (#PCDATA)>
