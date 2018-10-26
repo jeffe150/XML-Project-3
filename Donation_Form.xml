@@ -9,11 +9,11 @@
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT recur (#PCDATA)>
 <!ATTLIST recur type (Yes | No) #REQUIRED>
-<!ELEMENT donate (amount, designation, other, heading)>
+<!ELEMENT donate (amount, designation, Other)>
 <!ELEMENT amount (#PCDATA)>
 <!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (Ebenezer Greatest Need Fund | Ebenezer Life Long Learning | Other )>
+<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other )>
 <!ELEMENT Other (#PCDATA)>
 <!ELEMENT card (card_name, card_number, CVV, exp_month, exp_year)>
 <!ELEMENT card_name (#PCDATA)>
@@ -53,7 +53,7 @@
       <heading>DONATION AMOUNT</heading>
       <amount type="500.00"> $500.00 </amount>
       <designation type="Other">Horticultural Therapy Program </designation>
-
+      <
 
     </donate>
 
