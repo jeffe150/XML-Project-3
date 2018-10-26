@@ -23,7 +23,7 @@
 <!ELEMENT exp_year (#PCDATA)>
 <!ELEMENT billing (email, name, address)>
 <!ELEMENT email (#PCDATA)>
-<!ATTLIST name (first, last)>
+<!ELEMENT name (first, last)>
 <!ELEMENT first (#PCDATA)>
 <!ELEMENT last (#PCDATA)>
 <!ELEMENT address (street, unit, city, state, zip, phone) >
