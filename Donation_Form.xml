@@ -9,21 +9,21 @@
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT recur (#PCDATA)>
 <!ATTLIST recur type (Yes | No) #REQUIRED>
-<!ELEMENT donate (amount, designation, Other)>
+<!ELEMENT donate (amount, designation, other) >
 <!ELEMENT amount (#PCDATA)>
 <!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other )>
-<!ELEMENT Other (#PCDATA)>
-<!ELEMENT card (card_name, card_number, CVV, exp_month, exp_year)>
+<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other ) >
+<!ELEMENT other (#PCDATA)>
+<!ELEMENT card (card_name, card_number, CVV, exp_month, exp_year) >
 <!ELEMENT card_name (#PCDATA)>
 <!ELEMENT card_number (#PCDATA)>
 <!ELEMENT CVV (#PCDATA)>
 <!ELEMENT exp_month (#PCDATA)>
 <!ELEMENT exp_year (#PCDATA)>
 <!ELEMENT billing (name, address)>
-<!ATTLIST name type (first, last)>
-<!ELEMENT address (street, unit, city, state, zip, phone)>
+<!ATTLIST name type (first , last)>
+<!ELEMENT address (street, unit, city, state, zip, phone) >
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT unit (#PCDATA)>
 <!ELEMENT city (#PCDATA)>
@@ -52,7 +52,7 @@
     <donate>
       <heading>DONATION AMOUNT</heading>
       <amount type="500.00"> $500.00 </amount>
-      <designation type="Other">Horticultural Therapy Program </designation>
+      <designation type="other">Horticultural Therapy Program </designation>
       <
 
     </donate>
