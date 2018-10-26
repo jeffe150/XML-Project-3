@@ -11,9 +11,9 @@
 <!ATTLIST recur type (Yes | No) #REQUIRED>
 <!ELEMENT donate (amount, designation, other, heading) >
 <!ELEMENT amount (#PCDATA)>
-<!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
+<!ATTLIST amount type (500.00 | 250.00 | 100.00 | Other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other ) >
+<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other) #REQUIRED>
 <!ELEMENT Other (#PCDATA)>
 <!ELEMENT card (heading, card_name, card_number, CVV, exp_month, exp_year) >
 <!ELEMENT card_name (#PCDATA)>
