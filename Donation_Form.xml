@@ -9,9 +9,9 @@
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT recur (#PCDATA)>
 <!ATTLIST recur type (Yes | No) #REQUIRED>
-<!ELEMENT donate (amount, designation, other)>
+<!ELEMENT donate (amount, designation, other, heading)>
 <!ELEMENT amount (#PCDATA)>
-<!ATTLIST amount type ($500.00 | $250.00 | $100.00 | other) #REQUIRED>
+<!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
 <!ATTLIST designation type (Ebenezer Greatest Need Fund | Ebenezer Life Long Learning | Other )
 <!ELEMENT other (#PCDATA)>
@@ -40,3 +40,22 @@
 <!ATTLIST informed type (Yes | No) #REQUIRED>
 
 ]>
+
+<Donation_Form>
+  <title> Make a Gift </title>
+  <subtitle> Your safe and secure online donation directly advances Ebenezer's
+     mission. We are driven to heal, discover and educate for longer, healthier
+     lives. With our partners at Fairview Health Services and MHealth, Ebenezer
+      provides access throughout Minnesota to a full range of senior housing options,
+      community-based programs and medical care. </subtitle>
+    <recur type="Yes"> Make this donation recurring! </recur>
+    <donate>
+      <heading>DONATION AMOUNT</heading>
+      <amount type="$500.00">
+
+    </donate>
+
+
+
+
+</Donation_Form>
