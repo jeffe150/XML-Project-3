@@ -9,20 +9,21 @@
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT recur (#PCDATA)>
 <!ATTLIST recur type (Yes | No) #REQUIRED>
-<!ELEMENT donate (amount, designation, other) >
+<!ELEMENT donate (amount, designation, other, heading) >
 <!ELEMENT amount (#PCDATA)>
 <!ATTLIST amount type (500.00 | 250.00 | 100.00 | other) #REQUIRED>
 <!ELEMENT designation (#PCDATA)>
-<!ATTLIST designation type (GreatestNeedFund | LifeLongLearning | Other ) >
-<!ELEMENT other (#PCDATA)>
-<!ELEMENT card (card_name, card_number, CVV, exp_month, exp_year) >
+<!ATTLIST designation type (Greatest Need Fund | Life Long Learning | Other )>
+<!ELEMENT Other (#PCDATA)>
+<!ELEMENT card (heading, card_name, card_number, CVV, exp_month, exp_year) >
 <!ELEMENT card_name (#PCDATA)>
 <!ELEMENT card_number (#PCDATA)>
 <!ELEMENT CVV (#PCDATA)>
 <!ELEMENT exp_month (#PCDATA)>
 <!ELEMENT exp_year (#PCDATA)>
-<!ELEMENT billing (name, address)>
-<!ATTLIST name type (first , last)>
+<!ELEMENT billing (email, name, address)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST name type (first, last)>
 <!ELEMENT address (street, unit, city, state, zip, phone) >
 <!ELEMENT street (#PCDATA)>
 <!ELEMENT unit (#PCDATA)>
@@ -31,7 +32,7 @@
 <!ELEMENT zip (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
 <!ATTLIST phone type (cell, home)>
-<!ELEMENT details (dedication, notify, informed)>
+<!ELEMENT details (dedication, heading, notify, informed)>
 <!ELEMENT dedication (#PCDATA)>
 <!ATTLIST dedication type (None | In Honor Of | In Memory Of)>
 <!ELEMENT heading (#PCDATA)>
@@ -50,14 +51,40 @@
       community-based programs and medical care. </subtitle>
     <recur type="Yes"> Make this donation recurring! </recur>
     <donate>
-      <heading>DONATION AMOUNT</heading>
+      <heading> Donation Amount </heading>
       <amount type="500.00"> $500.00 </amount>
-      <designation type="other">Horticultural Therapy Program </designation>
-      <
-
+      <designation type="Other">Horticultural Therapy Program </designation>
     </donate>
 
+    <card>
+      <heading> Supported Payment Options </heading>
+      <card_name> Jane Doe </card_name>
+      <card_number> 1234-5678-9101-1121 </card_number>
+      <CVV> 123 </CVV>
+      <exp_month> 01 </exp_month>
+      <exp_year> 2020 <exp_year>
+    </card>
 
+    <billing>
+      <email> janedoe@gmail.com </email>
+      <name type="first"> Jane </name>
+      <name type="last"> Doe </name>
+      <address>
+        <street> 123 Imaginary Street </street>
+        <unit> Apt. 101</unit>
+        <city> Minneapolis </city>
+        <state> MN </state>
+        <zip> 55401 </zip>
+      </address>
+      <phone type="cell"> 123-456-7890 </phone>
+      <phone type="home"> 098-765-4321 </phone>
+    </billing>
 
+    <details>
+      <dedication type="In Honor Of"> Paula Vollmar-Heywood </dedication>
+      <heading> Please notify the following person(s) that a donation has been made </heading>
+      <notify> Paula Vollmar-Heywood </notify>
+      <informed type="Yes"> Please keep me informed of Ebenezer Society Foundation's efforts. </informed>
+    </details>
 
 </Donation_Form>
