@@ -64,7 +64,7 @@
       <card_number> 1234-5678-9101-1121 </card_number>
       <CVV> 123 </CVV>
       <exp_month> 01 </exp_month>
-      <exp_year> 2020 <exp_year>
+      <exp_year> 2020 </exp_year>
     </card>
 
     <billing>
