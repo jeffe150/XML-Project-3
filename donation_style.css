@@ -1,17 +1,19 @@
 Donation_Form {
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 20px;
     margin-right: 40px;
     margin-left: 40px;
     font-family: "Optima", sans-serif;
-    font-weight: 500
-    width: 300px
+    font-weight: 500;
+    width: 300px;
     position: relative; float: left;
 }
 
 title {
   color:#97272E;
-  font-weight: 1000
+  font-weight: 1000;
+  font-size:140%;
+  display: block;
 
 }
 
@@ -20,7 +22,7 @@ subtitle {
 }
 
 heading{
-font-weight: bold
+font-weight: bold;
 font-variant: small-caps;
 }
 
