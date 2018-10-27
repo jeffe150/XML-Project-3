@@ -3,35 +3,164 @@ Donation_Form {
     margin-bottom: 20px;
     margin-right: 40px;
     margin-left: 40px;
-    font-family: "Optima", sans-serif;
+    font-family: "lucida console", sans-serif;
     font-weight: 500;
-    width: 950px;
+    width: 1100px;
     position: relative; float: left;
+    padding-bottom: 60px;
+}
+
+main{
+  color:#97272E;
+  padding-bottom: 20px;
+  display: block;
+  font-size:200%;
+  font-family: "Palatino", serif;
 }
 
 title {
   color:#97272E;
   font-weight: 1000;
-  font-size:140%;
+  font-size:150%;
   display: block;
-
+  padding-bottom: 20px;
 }
 
 subtitle {
   color:#796E6E;
+  padding-bottom: 20px;
+  display: block;
+  font-size: 100%;
+
 }
 
 heading{
-font-weight: bold;
-font-variant: small-caps;
+  font-weight: bold;
+  font-variant: small-caps;
+  display: block;
+  padding-bottom: 10px;
+  font-size:140%;
+  color:#97272E;
 }
 
 recur{
-display: block
-
+  display: block;
+  padding-bottom: 10px;
 }
+recur::after {content: "Yes."}
 
 donate{
-display: block
-
+  display: block;
+  padding-bottom: 10px;
 }
+
+amount{
+  display:block;
+}
+amount::before {content: "Amount:"}
+
+designation{
+  display:block;
+}
+designation::before {content: "Designation: Other; "}
+
+card{
+  display: block;
+  padding-bottom: 10px;
+}
+
+card_name{
+  display:block;
+}
+
+card_name::before {content: "Name on Card: "}
+
+card_number{
+  display: block;
+}
+card_number::before {content: "Card Number: "}
+
+CVV{
+  display:block;
+}
+CVV::before {content: "CVV/CCV: " }
+
+exp_month{
+  display:block;
+}
+exp_month::before {content: "Expiration Month: "}
+
+exp_year{
+  display:block;
+}
+exp_year::before {content: "Expiration Year: "}
+
+billing{
+  display:block;
+  padding-bottom: 10px;
+}
+
+email{
+  display:block;
+}
+email::before {content: "Email: "}
+
+name{
+  display:block;
+}
+name::before {content: "Name (First, Last): "}
+
+address{
+  display:block;
+}
+
+street{
+  display:block;
+}
+street::before {content: "Address, Line 1: "}
+
+unit{
+  display:block;
+}
+unit::before {content: "Address, Line 2: "}
+
+city{
+  display:block;
+}
+city::before {content: "City: "}
+
+state{
+  display:block;
+}
+state::before {content: "State: "}
+
+zip{
+  display:block;
+}
+zip::before {content: "Zip Code: "}
+
+phone{
+  display:block;
+}
+phone::before {content: attr(type)": " }
+phone[primary]::after {content: "(" attr(primary) ")"}
+
+details{
+  display:block;
+}
+
+dedication{
+  display:block;
+}
+dedication::before {content: attr(type)": " }
+
+notify{
+  display:block;
+}
+notify::before {content: "Please notify the following person(s) that a donation has been made: "}
+
+informed{
+  display:block;
+}
+informed::before {content: "Please keep me informed of Ebenezer Society Foundation's efforts: "}
+informed::after {content: "Yes."}

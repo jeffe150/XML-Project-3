@@ -5,6 +5,7 @@
 <!--URL= https://jeffe150.github.io/XML-Project-3/Donation_Form.xml-->
 
 <!DOCTYPE Donation_Form [
+<!ELEMENT main (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT subtitle (#PCDATA)>
 <!ELEMENT recur (#PCDATA)>
@@ -33,7 +34,7 @@
 <!ELEMENT state (#PCDATA)>
 <!ELEMENT zip (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
-<!ATTLIST phone type (cell | home) #REQUIRED>
+<!ATTLIST phone type (CellPhone | HomePhone) #REQUIRED>
 <!ELEMENT details (dedication, heading, notify, informed)>
 <!ELEMENT dedication (#PCDATA)>
 <!ATTLIST dedication type (None | InHonorOf | InMemoryOf) #REQUIRED>
@@ -45,21 +46,23 @@
 ]>
 
 <Donation_Form>
+  <main> Ebenezer Online Giving Form </main>
   <title> Make a Gift </title>
   <subtitle> Your safe and secure online donation directly advances Ebenezer's
      mission. We are driven to heal, discover and educate for longer, healthier
      lives. With our partners at Fairview Health Services and MHealth, Ebenezer
       provides access throughout Minnesota to a full range of senior housing options,
       community-based programs and medical care. </subtitle>
-    <recur type="Yes"> Make this donation recurring! </recur>
+
     <donate>
       <heading> Donation Amount </heading>
       <amount type="500.00"> $500.00 </amount>
       <designation type="Other">Horticultural Therapy Program </designation>
+      <recur type="Yes"> Make this donation recurring: </recur>
     </donate>
 
     <card>
-      <heading> Supported Payment Options </heading>
+      <heading> Payment </heading>
       <card_name> Jane Doe </card_name>
       <card_number> 1234-5678-9101-1121 </card_number>
       <CVV> 123 </CVV>
@@ -68,6 +71,7 @@
     </card>
 
     <billing>
+      <heading> Billing </heading>
       <email> janedoe@gmail.com </email>
       <name>
         <first> Jane </first>
@@ -80,15 +84,15 @@
         <state> MN </state>
         <zip> 55401 </zip>
       </address>
-      <phone type="cell"> 123-456-7890 </phone>
-      <phone type="home"> 098-765-4321 </phone>
+      <phone type="Cell Phone"> 123-456-7890 </phone>
+      <phone type="Home Phone"> 098-765-4321 </phone>
     </billing>
 
     <details>
+      <heading> Dedications and Notifications </heading>
       <dedication type="In Honor Of"> Paula Vollmar-Heywood </dedication>
-      <heading> Please notify the following person(s) that a donation has been made </heading>
       <notify> Paula Vollmar-Heywood </notify>
-      <informed type="Yes"> Please keep me informed of Ebenezer Society Foundation's efforts. </informed>
+      <informed type="Yes"> </informed>
     </details>
 
 </Donation_Form>
