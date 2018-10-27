@@ -52,6 +52,7 @@ recur::after {content: "Yes."}
 donate{
   display: block;
   padding-bottom: 10px;
+  margin-left: 2%;
 }
 
 amount{
@@ -67,6 +68,7 @@ designation::before {content: "Designation: Other; "}
 card{
   display: block;
   padding-bottom: 10px;
+  margin-left: 2%;
 }
 
 card_name{
@@ -98,6 +100,7 @@ exp_year::before {content: "Expiration Year: "}
 billing{
   display:block;
   padding-bottom: 10px;
+  margin-left: 2%;
 }
 
 email{
@@ -147,6 +150,7 @@ phone[primary]::after {content: "(" attr(primary) ")"}
 
 details{
   display:block;
+  margin-left: 2%;
 }
 
 dedication{

@@ -54,15 +54,15 @@
       provides access throughout Minnesota to a full range of senior housing options,
       community-based programs and medical care. </subtitle>
 
+<heading> Donation Amount </heading>
     <donate>
-      <heading> Donation Amount </heading>
       <amount type="500.00"> $500.00 </amount>
       <designation type="Other">Horticultural Therapy Program </designation>
       <recur type="Yes"> Make this donation recurring: </recur>
     </donate>
 
+<heading> Payment </heading>
     <card>
-      <heading> Payment </heading>
       <card_name> Jane Doe </card_name>
       <card_number> 1234-5678-9101-1121 </card_number>
       <CVV> 123 </CVV>
@@ -70,8 +70,8 @@
       <exp_year> 2020 </exp_year>
     </card>
 
+<heading> Billing </heading>
     <billing>
-      <heading> Billing </heading>
       <email> janedoe@gmail.com </email>
       <name>
         <first> Jane </first>
@@ -88,8 +88,8 @@
       <phone type="Home Phone"> 098-765-4321 </phone>
     </billing>
 
+<heading> Dedications and Notifications </heading>
     <details>
-      <heading> Dedications and Notifications </heading>
       <dedication type="In Honor Of"> Paula Vollmar-Heywood </dedication>
       <notify> Paula Vollmar-Heywood </notify>
       <informed type="Yes"> </informed>
