@@ -3,6 +3,8 @@ Donation_Form {
     margin-bottom: 20px;
     margin-right: 40px;
     margin-left: 40px;
+    font-family: "Optima", sans-serif;
+    font-weight: 500
 }
 
 title {
