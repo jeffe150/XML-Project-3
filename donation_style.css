@@ -1,5 +1,5 @@
 Donation_Form {
-    margin-top: 300px;
+    margin-top: 80px;
     margin-bottom: 20px;
     margin-right: 40px;
     margin-left: 40px;
@@ -15,13 +15,10 @@ title {
 
 subtitle {
   color:#796E6E;
-  font-family: "Optima", sans-serif;
-  font-weight: 500
 }
 
-donationtitle {
+heading{
 color:#A49B9B;
-font-family: "optima" sans-serif;
 font-variant: small-caps;
 }
 
