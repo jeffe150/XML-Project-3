@@ -6,6 +6,7 @@ Donation_Form {
     font-family: "Optima", sans-serif;
     font-weight: 500
     width: 300px
+    position: relative; float: left;
 }
 
 title {
