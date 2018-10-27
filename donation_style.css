@@ -18,10 +18,16 @@ subtitle {
 }
 
 heading{
-color:#A49B9B;
+font-weight: bold
 font-variant: small-caps;
 }
 
-paragraph {
-  font-family: "lucida console", osaka, sans-serif;
+recur{
+display: block
+
+}
+
+donate{
+display: block
+
 }
