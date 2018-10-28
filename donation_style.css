@@ -64,7 +64,6 @@ designation{
   display:block;
 }
 designation::before {content: "Designation: " attr(type)", " }
-designation[primary]::after {content: "(" attr(primary) ")"}
 
 card{
   display: block;
@@ -147,7 +146,7 @@ phone{
   display:block;
 }
 phone::before {content: attr(type)": " }
-phone[primary]::after {content: "(" attr(primary) ")"}
+
 
 details{
   display:block;
